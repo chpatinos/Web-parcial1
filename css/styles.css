@@ -1,0 +1,41 @@
+.navbar-brand {
+  font-family: "Satisfy", cursive;
+}
+
+.navbar {
+  border-bottom: 1px solid rgb(231, 231, 231);
+  margin-bottom: 10px;
+}
+
+.shoping-btn {
+  border: none;
+  color: black;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-image {
+  width: 20px;
+}
+
+.action-btn {
+  border: none;
+  color: black;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: #ff595a;
+  border: 2px solid gray;
+}
+
+.confirm-btn {
+  border: 2px solid gray;
+  background-color: #f2e8de;
+}
+
+.btn:hover {
+  background-color: gainsboro;
+}
