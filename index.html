@@ -16,83 +16,55 @@
   <body>
     <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand" href="#">Restaurant Lounge</a>
-      <button class="btn shoping-btn"><img class="btn-image" src="./assets/img/shopping.png" alt="" /> 2 items</button>
+      <a id="btn-shoping" class="btn shoping-btn"><img class="btn-image" src="./assets/img/shopping.png" alt="" /> 0 items</a>
     </nav>
     <img class="w-100" src="https://i.imgur.com/S8Ffdqa.png" alt="" />
     <hr />
     <nav class="navbar navbar-expand navbar-dark bg-dark">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Burgers <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" id="btn-burger">Burgers</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Tacos</a>
+          <a class="nav-link" id="btn-tacos">Tacos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Salads</a>
+          <a class="nav-link" id="btn-salads">Salads</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Desserts</a>
+          <a class="nav-link" id="btn-dessers">Desserts</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Drinks & Sides</a>
+          <a class="nav-link" id="btn-drinks">Drinks & Sides</a>
         </li>
       </ul>
     </nav>
     <hr />
     <div class="container-fluid">
-      <div class="h3 text-center">Order detail</div>
+      <div class="tittle h3 text-center">Burgers</div>
       <hr />
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col">Item</th>
-            <th scope="col">Qty</th>
-            <th scope="col">Description</th>
-            <th scope="col">Unit price</th>
-            <th scope="col">Amount</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>1</td>
-            <td>Double Cheese Hamburger</td>
-            <td>7.50</td>
-            <td>7.50</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>1</td>
-            <td>Bacon Hamburger</td>
-            <td>9.25</td>
-            <td>9.25</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>2</td>
-            <td>Cheese cesar salad</td>
-            <td>8.15</td>
-            <td>16.30</td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td>2</td>
-            <td>Diet coke</td>
-            <td>4.25</td>
-            <td>8.50</td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="row justify-content-around align-items-center">
-        <div class="h6 m-0">Total: $41.55</div>
-        <div class="botones">
-          <button class="btn action-btn cancel-btn">Cancel</button>
-          <button class="btn action-btn confirm-btn">Confirm order</button>
-        </div>
-      </div>
+      <div class="row justify-content-center text-center loaded-content"></div>
       <div class="footer-copyright text-center py-3">Contact us +57 3102105253 - infor@restaurant.com - @restaurant</div>
     </div>
+
+    <div class="modal fade" id="cancelModal" tabindex="-1" role="dialog" aria-labelledby="cancelModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cancelModalLabel">Cancel the order</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">Are you sure about cancelling th order?</div>
+          <div class="modal-footer">
+            <button id="btn-reset-shopping" class="btn action-btn confirm-btn" data-dismiss="modal">Yes, I want to cancel the order</button>
+            <button class="btn action-btn cancel-btn" data-dismiss="modal">No, I want to continue adding products</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script
@@ -105,5 +77,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/scripts.js"></script>
   </body>
 </html>

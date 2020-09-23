@@ -1,5 +1,36 @@
 .navbar-brand {
   font-family: "Satisfy", cursive;
+  font-size: xx-large;
+}
+
+.action-btn {
+  font-weight: 500;
+  font-size: 16px !important;
+}
+
+.btn-primary {
+  background-color: #333a42;
+  border-color: #333a42;
+}
+
+.card {
+  margin-bottom: 2em;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+.product-image {
+  height: 300px;
+  object-fit: cover;
+}
+
+p {
+  width: 100%;
+  white-space: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .navbar {
@@ -17,6 +48,10 @@
 
 .btn-image {
   width: 20px;
+}
+
+.active {
+  font-size: 18px;
 }
 
 .action-btn {
